@@ -55,5 +55,6 @@
   <bool name="isTablet">false</bool>
 
   <string name="stripe_publishable_key">pk_live_zjuK52lEUYcvBhIXEUnOEJzk</string>
+  <string name="koala_endpoint">koala_endpoint</string>
   <string tools:ignore="TypographyDashes" name="stripe_version">2015-08-07</string>
 </resources>

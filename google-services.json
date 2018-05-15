@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "657575373078",
+    "firebase_url": "https://kikstartersample.firebaseio.com",
+    "project_id": "kikstartersample",
+    "storage_bucket": "kikstartersample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657575373078:android:848d3fb154725212",
+        "android_client_info": {
+          "package_name": "com.kickstarter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657575373078-8p6nlprl524qv4kg2ounseatng7bpqt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdQea3tSuSDgdCJZOLnIh5-In1EbjJN4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657575373078:android:ebb1f08a58eea9df",
+        "android_client_info": {
+          "package_name": "com.kickstarter.kickstarter.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657575373078-8p6nlprl524qv4kg2ounseatng7bpqt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdQea3tSuSDgdCJZOLnIh5-In1EbjJN4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

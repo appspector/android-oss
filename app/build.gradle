@@ -20,7 +20,7 @@ if (file('signing.gradle').exists()) {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.kickstarter"
@@ -36,6 +36,8 @@ android {
 
         // allow for multiple language fallbacks
         resConfigs "auto"
+
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
     }
 
     signingConfigs {
@@ -243,6 +245,5 @@ gradle.taskGraph.beforeTask { Task task ->
     }
 }
 
-apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
