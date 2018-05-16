@@ -2,10 +2,21 @@ buildscript {
     repositories {
         jcenter()
         google()
+        maven {
+            url "https://maven.appspector.com/artifactory/android-sdk"
+        }
     }
+
+    ext {
+        appspectorVersion = '0.5.0'
+        supportVersion ='25.1.0'
+    }
+
+
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.1'
         classpath 'com.google.gms:google-services:3.0.0'
+        classpath "com.appspector:android-sdk-plugin:$appspectorVersion"
     }
 }
 

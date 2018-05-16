@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply from: 'quality.gradle'
+apply plugin: 'com.appspector.sdk'
+
 
 def externalPrivateVersion = new File(project.rootDir.path + "/app/external_version_code.txt").text.trim().toInteger()
 def externalPublicVersion = new File(project.rootDir.path + "/app/external_version_name.txt").text.trim()
@@ -19,7 +21,7 @@ if (file('signing.gradle').exists()) {
 }
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion '27.0.3'
 
     defaultConfig {
@@ -130,19 +132,24 @@ android {
 
 repositories {
     jcenter()
+    mavenLocal()
     maven {
         url 'https://maven.google.com'
+    }
+
+    maven {
+        url "https://maven.appspector.com/artifactory/android-sdk"
     }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:cardview-v7:25.1.0'
-    compile 'com.android.support:design:25.1.0'
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:cardview-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:design:$rootProject.ext.supportVersion"
     compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support:recyclerview-v7:25.1.0'
-    compile 'com.android.support:support-annotations:25.1.0'
+    compile "com.android.support:recyclerview-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:support-annotations:$rootProject.ext.supportVersion"
     compile 'com.facebook.android:facebook-android-sdk:4.7.0'
     compile 'com.github.frankiesardo:auto-parcel:0.3.1'
     annotationProcessor 'com.github.frankiesardo:auto-parcel-processor:0.3.1'
@@ -187,6 +194,8 @@ dependencies {
     androidTestCompile 'com.android.support.test:rules:0.5'
     androidTestCompile 'com.android.support.test:runner:0.5'
     androidTestCompile 'com.android.support:support-annotations:27.0.0'
+
+    implementation "com.appspector:android-sdk:$rootProject.ext.appspectorVersion"
 }
 
 // SHA and timestamp caching courtesy of https://github.com/gdg-x/frisbee/blob/develop/app/build.gradle#L193-L218
