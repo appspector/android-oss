@@ -10,10 +10,10 @@ def internalPublicVersion = new File(project.rootDir.path + "/app/internal_versi
 def isCircle = "true" == System.getenv("CIRCLECI")
 
 ext.signing = [
-    storeFilePath: "path/to/keystore",
-    storePassword: "keystore password",
-    keyAlias     : "key alias",
-    keyPassword  : "key password"
+        storeFilePath: "path/to/keystore",
+        storePassword: "keystore password",
+        keyAlias     : "key alias",
+        keyPassword  : "key password"
 ]
 
 if (file('signing.gradle').exists()) {
@@ -74,7 +74,7 @@ android {
         }
     }
 
-    flavorDimensions "AUDIENCE", "API"
+    flavorDimensions "AUDIENCE", "API", "APP_SPECTOR"
 
     productFlavors {
         pre21 {
@@ -99,6 +99,18 @@ android {
             applicationId "com.kickstarter.kickstarter"
             versionCode externalPrivateVersion
             versionName externalPublicVersion
+        }
+
+
+        appSpector {
+            dimension "APP_SPECTOR"
+
+            versionName "$internalPrivateVersion - ${rootProject.appspectorVersionName}"
+            versionCode rootProject.appspectorVersionCode
+            applicationId = "com.kickstarter.appsector.${rootProject.appspectorAppId}"
+
+            buildConfigField "String", "APPSPECTOR_API_KEY", "\"" + (System.getenv('APPSPECTOR_API_KEY')
+                    ?: rootProject.appspectorDefaultApiKey) + "\""
         }
     }
 
@@ -138,7 +150,7 @@ repositories {
     }
 
     maven {
-        url "https://maven.appspector.com/artifactory/android-sdk"
+        url appspectorMavenRep
     }
 }
 
@@ -195,7 +207,7 @@ dependencies {
     androidTestCompile 'com.android.support.test:runner:0.5'
     androidTestCompile 'com.android.support:support-annotations:27.0.0'
 
-    implementation "com.appspector:android-sdk:$rootProject.ext.appspectorVersion"
+    implementation "com.appspector:android-sdk:$rootProject.appspectorVersion"
 }
 
 // SHA and timestamp caching courtesy of https://github.com/gdg-x/frisbee/blob/develop/app/build.gradle#L193-L218

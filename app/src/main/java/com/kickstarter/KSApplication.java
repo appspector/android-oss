@@ -58,7 +58,7 @@ public class KSApplication extends MultiDexApplication {
 
         MultiDex.install(this);
 
-        if (BuildConfig.DEBUG){
+        if (BuildConfig.DEBUG) {
             initAppSpector();
         }
 
@@ -132,10 +132,7 @@ public class KSApplication extends MultiDexApplication {
 
     private void initAppSpector() {
         AppSpector.build(this)
-                .addPerformanceMonitor()
-                .addScreenshotMonitor()
-                .addHttpMonitor()
-                .addLogMonitor()
-                .run("ZDJhODkwYzMtYTMwZS00MDk0LWE0YjMtNDdjYzM5YTVjMWNk");
+                .withDefaultMonitors()
+                .run(BuildConfig.APPSPECTOR_API_KEY);
     }
 }
