@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "302148742590",
+    "firebase_url": "https://kickstarterfork.firebaseio.com",
+    "project_id": "kickstarterfork",
+    "storage_bucket": "kickstarterfork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302148742590:android:f636afb68aa4650a",
+        "android_client_info": {
+          "package_name": "com.kickstarter.kickstarter.internal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302148742590-akdojo32ctpgb3bi97ijpa8tsjm4f659.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kickstarter.kickstarter.internal",
+            "certificate_hash": "75ecb13aed4056ac954eb4a22a9b6658f025ec6e"
+          }
+        },
+        {
+          "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDBQC-9gXcuG6TuGhuw9jha0hq2n8nIig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302148742590:android:84d6a4c8c794b5a3",
+        "android_client_info": {
+          "package_name": "com.kickstarter.kickstarter.internal.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302148742590-f8rfo9b6or3q1tuca7ersq837v6hkoln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kickstarter.kickstarter.internal.debug",
+            "certificate_hash": "75ecb13aed4056ac954eb4a22a9b6658f025ec6e"
+          }
+        },
+        {
+          "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDBQC-9gXcuG6TuGhuw9jha0hq2n8nIig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
