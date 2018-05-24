@@ -65,15 +65,12 @@ config/*.yml
 .CHANGELOG.tmp
 
 # No secrets!
-app/src/main/java/com/kickstarter/libs/utils/Secrets.java
 lib/milkrun/secrets.rb
 app/src/main/assets/fonts/ss-kickstarter.otf
 app/src/main/res/values/koala_endpoint.xml
 app/src/debug/res/values/koala_endpoint.xml
 config/koala_endpoint.xml
 app/src/main/assets/www/WebViewJavascript.html
-app/src/main/java/com/kickstarter/libs/WebViewJavascriptInterface.java
-app/src/main/java/com/kickstarter/services/KSWebViewClient.java
 vendor/native-secrets
 app/src/**/google-services.json
 app/src/main/java/com/kickstarter/libs/TLSSocketFactory.java
