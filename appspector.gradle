@@ -1,0 +1,10 @@
+ext{
+    appspectorVersion = '+'
+    appspectorDefaultApiKey = 'MmFmNmE4MDktMTg3ZC00YzJmLWE0ZmItYWIzNmM1ZmU1Zjc5'
+    appspectorMavenRep =  System.getenv('APPSPECTOR_MAVEN_URL') ?: "http://maven.appspector.com/artifactory/android-sdk-beta"
+    circleBuildNum = System.getenv('CIRCLE_BUILD_NUM')?:"0"
+    appspectorVersionCode = Integer.parseInt(circleBuildNum)
+    appspevtorSdkVersion = System.getenv('APPSPECTOR_SDK_VERSION')?:0
+    appspectorVersionName =  "$appspevtorSdkVersion-$circleBuildNum"
+    appspectorAppId = System.getenv('SDK_ENV')?:"staging"
+}

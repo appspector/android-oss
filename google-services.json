@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "657575373078",
-    "firebase_url": "https://kikstartersample.firebaseio.com",
-    "project_id": "kikstartersample",
-    "storage_bucket": "kikstartersample.appspot.com"
+    "project_number": "302148742590",
+    "firebase_url": "https://kickstarterfork.firebaseio.com",
+    "project_id": "kickstarterfork",
+    "storage_bucket": "kickstarterfork.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:657575373078:android:848d3fb154725212",
+        "mobilesdk_app_id": "1:302148742590:android:1f8b69ac49a1c73b",
         "android_client_info": {
-          "package_name": "com.kickstarter"
+          "package_name": "com.kickstarter.appsector.prod"
         }
       },
       "oauth_client": [
         {
-          "client_id": "657575373078-8p6nlprl524qv4kg2ounseatng7bpqt8.apps.googleusercontent.com",
+          "client_id": "302148742590-jcp6p62oslcjbeh4d9qqs30j6pg397jv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kickstarter.appsector.prod",
+            "certificate_hash": "75ecb13aed4056ac954eb4a22a9b6658f025ec6e"
+          }
+        },
+        {
+          "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAdQea3tSuSDgdCJZOLnIh5-In1EbjJN4U"
+          "current_key": "AIzaSyDDBQC-9gXcuG6TuGhuw9jha0hq2n8nIig"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
@@ -39,20 +52,28 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:657575373078:android:ebb1f08a58eea9df",
+        "mobilesdk_app_id": "1:302148742590:android:30d9d0f23c00a018",
         "android_client_info": {
-          "package_name": "com.kickstarter.kickstarter.debug"
+          "package_name": "com.kickstarter.appsector.rc"
         }
       },
       "oauth_client": [
         {
-          "client_id": "657575373078-8p6nlprl524qv4kg2ounseatng7bpqt8.apps.googleusercontent.com",
+          "client_id": "302148742590-4rpk22pd09hj7k3v3m60e3p1mnogric0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kickstarter.appsector.rc",
+            "certificate_hash": "75ecb13aed4056ac954eb4a22a9b6658f025ec6e"
+          }
+        },
+        {
+          "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAdQea3tSuSDgdCJZOLnIh5-In1EbjJN4U"
+          "current_key": "AIzaSyDDBQC-9gXcuG6TuGhuw9jha0hq2n8nIig"
         }
       ],
       "services": {
@@ -60,8 +81,57 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302148742590:android:c6940b1b6922148a",
+        "android_client_info": {
+          "package_name": "com.kickstarter.appspector.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302148742590-5vebjk6bbavtr62kdjc8nstec0n8dq4j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kickstarter.appspector.staging",
+            "certificate_hash": "75ecb13aed4056ac954eb4a22a9b6658f025ec6e"
+          }
+        },
+        {
+          "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDBQC-9gXcuG6TuGhuw9jha0hq2n8nIig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302148742590-f3d1b9u6da8707vlpfj4thojof9f99ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
