@@ -16,4 +16,4 @@ jobs:
             name: Upload to HockeyApp
             command: sh ./.circleci/hockeyapp-upload.sh
             environment:
-                APK_PATH: app/build/outputs/apk/internalMin21AppSpector/debug/app-internal-min21-appSpector-debug.apk
+                APK_PATH: app/build/outputs/apk/internalPre21AppSpector/debug/app-internal-pre21-appSpector-debug.apk
